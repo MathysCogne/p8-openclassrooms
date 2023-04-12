@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import colors from '../../style/colors'
 
-function Header() {
+function Location() {
    return (
       <>
-         <p>Composant HEADER</p>
+         <p>Page Location</p>
       </>
    )
  }
  
- export default Header
+ export default Location

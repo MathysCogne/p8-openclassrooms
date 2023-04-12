@@ -1,12 +1,43 @@
+// IMPORTS
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../../style/colors'
+import media from '../../style/media'
 
-function Header() {
+// ASSETS
+import LogoFooter from '../../assets/logo-footer.png'
+
+// STYLES
+const ContFooter = styled.footer`
+   margin-top: 200px;
+   background-color: black;
+   height: 210px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+`
+
+const FooterText = styled.p`
+   color: white;
+   font-size: 18px;
+   @media ${media.mobile} {
+      font-size: 15px;
+   }
+`
+
+
+// FOOTER
+function Footer() {
    return (
-      <>
-         <p>Composant HEADER</p>
-      </>
+      <ContFooter>
+         <Link to="/">
+            <img src={LogoFooter} />
+         </Link>
+
+         <FooterText>© 2023 Kasa. All rights reserved</FooterText>
+      </ContFooter>
    )
  }
  
- export default Header
+ export default Footer
