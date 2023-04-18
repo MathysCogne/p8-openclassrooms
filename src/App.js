@@ -25,20 +25,25 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 const Contenair = styled.div`
-  width: 70%;  
+  max-width: 1300px;
+  min-height: 80vh;
+
+  width: 80%;  
   margin: 0 auto;
   @media ${media.mobile} {
-    width: 95%;
+    width: 90%;
  }
   `
 
 
 
 function App() {
+
   return (
     <>
+    <GlobalStyle />
     <Contenair>
-      <GlobalStyle />
+
       <Header />
       
       <Routes>

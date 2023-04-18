@@ -8,7 +8,6 @@ import LogoFooter from '../../assets/logo-footer.png'
 
 // STYLES
 const ContFooter = styled.footer`
-   margin-top: 200px;
    background-color: black;
    height: 210px;
 
@@ -16,6 +15,7 @@ const ContFooter = styled.footer`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
 `
 
 const FooterText = styled.p`

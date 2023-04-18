@@ -1,5 +1,5 @@
 // IMPORTS
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../style/colors'
 import media from '../../style/media'
@@ -14,10 +14,6 @@ const ContHeader = styled.nav`
    align-items: center;
    margin: 50px 0;
 `
-const ContLink = styled.div`
-   display: inline-flex;
-
-`
 const HomeLogo = styled.img`
    height: 68px;
    width: 210px;
@@ -26,7 +22,8 @@ const HomeLogo = styled.img`
       width: 145px;
    }
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
+                           // NavLink = Link + active (Gere directement le style du lien actif)
    color: ${colors.primary};
    text-decoration: none;
    font-size: 24px;
@@ -35,11 +32,15 @@ const StyledLink = styled(Link)`
       font-size: 18px;
       padding: 0 0 0 30px;
    }
+   &.active {
+      text-decoration: underline;
+   }
 `
 
 
 // HEADER
 function Header() {
+
    return (
       <ContHeader>
          <Link to="/">

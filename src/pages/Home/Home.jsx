@@ -9,7 +9,7 @@ import Banner from '../../assets/banner-home.png'
 
 // STYLES
 const HomeCont = styled.section`
-   margin: 0 0 400px 0; 
+
 `
 const BannerCont = styled.div`
    width: 100%;

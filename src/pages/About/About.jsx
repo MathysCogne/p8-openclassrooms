@@ -4,12 +4,15 @@ import styled from 'styled-components'
 import colors from '../../style/colors'
 import media from '../../style/media'
 
+// COMPONENTS
+import Collapsehome from '../../components/CollapseHome/Collapsehome'
+
 // ASSETS
 import Banner from '../../assets/banner-about.png'
 
 // STYLES
 const AboutCont = styled.section`
-   margin: 0 0 400px 0; 
+
 `
 const BannerCont = styled.img`
    width: 100%;
@@ -23,7 +26,8 @@ function About() {
    return (
       <AboutCont>
          <BannerCont src={Banner} />
-         <h1>WSH PAGE A PROPOS MON GARS HIHI</h1>
+
+         <Collapsehome />
       </AboutCont>
    )
  }
