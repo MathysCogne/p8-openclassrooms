@@ -17,8 +17,7 @@ const ContHeader = styled.nav`
 const HomeLogo = styled.img`
    width: 180px;
    @media ${media.mobile} {
-      height: 47px;
-      width: 145px;
+      width: 115px;
    }
 `
                // NavLink = Link + active (Gere directement le style du lien actif)
@@ -28,8 +27,8 @@ const StyledLink = styled(NavLink)`
    font-size: 24px;
    padding: 0 0 0 60px;
    @media ${media.mobile} {
-      font-size: 18px;
-      padding: 0 0 0 30px;
+      font-size: 17px;
+      padding: 0 0 0 15px;
    }
    // Gestion du style du lien actif grace a NavLink
    &.active {

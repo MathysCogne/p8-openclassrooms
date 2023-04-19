@@ -12,12 +12,14 @@ import Cardlocation from '../../components/CardLocation/Cardlocation'
 const BannerCont = styled.div`
    width: 100%;
    height: 223px;
+   margin: 70px 0;
 
    display: flex;
    justify-content: center;
    align-items: center;
    @media ${media.mobile} {
       height: 150px;
+      margin: 0 0;
    }
    &::after {
       content: "Chez vous, partout et ailleurs...";
@@ -26,7 +28,7 @@ const BannerCont = styled.div`
       color: white;
       font-size: 38px;
       @media ${media.mobile} {
-         font-size: 24px;
+         font-size: 18px;
       }
    }
 `

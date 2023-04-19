@@ -35,19 +35,22 @@ const TittleCont = styled.div`
    justify-content: space-between;
    align-items: center;
    cursor: pointer;
+   @media ${media.mobile} {
+      padding: 8px;
+   }
 `
 const TittleCollapse = styled.h4`
    font-weight: 500;
    margin: 0;
    color: white;
    @media ${media.mobile} {
-      font-size: 18px;
+      font-size: 17px;
    }
 `
 const TextCont = styled.div`
    padding: 15px 20px;
    margin: 0;
-   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')}; // Si le state est à true, on affiche le texte, sinon on le cache
    background-color: ${colors.backgroundCard};
    border-radius: 0 0 10px 10px;
 `
@@ -55,10 +58,10 @@ const TextCollapse = styled.p`
    font-weight: 300;
    padding: 2px;
    margin: 0;
-   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')}; // Si le state est à true, on affiche le texte, sinon on le cache
    color: ${colors.primary};
    @media ${media.mobile} {
-      font-size: 17px;
+      font-size: 16px;
    }
 `
 

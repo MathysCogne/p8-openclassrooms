@@ -9,8 +9,8 @@ import StarInactive from '../../assets/star-inactive.png';
 // STYLES
 const Stars = styled.img`
    @media ${media.mobile} {
-      width: 30px;
-      height: 30px;
+      width: 27px;
+      height: 27px;
    }
 `
 

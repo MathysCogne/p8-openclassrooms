@@ -21,7 +21,7 @@ import media from './style/media'
 
 const GlobalStyle = createGlobalStyle`
     div {
-        font-family: 'Monteserat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     a {
         text-decoration: none;
