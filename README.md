@@ -37,24 +37,23 @@ L'objectif était de développer une application web de location immobilière av
 &nbsp;
 ## Installation des dépendances
 
-> Blablabla ``telnet mapscii.me``
-
-> Blablabla ``telnet mapscii.me``
-
-> Blablabla ``telnet mapscii.me``
-
-> Blablabla ``telnet mapscii.me``
+> Installer les nodes module: ``npm add``
 
 
 ## Démarrage
 
-Blandznkld
+> Pour lancer l'application ``npm run start``
 
 &nbsp;
 
 &nbsp;
 ## Brief de mission
-Blandznkld
+
+> Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !
+
+> Objectif : Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
+
+
 
 
 
