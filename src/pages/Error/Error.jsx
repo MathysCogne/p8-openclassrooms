@@ -5,7 +5,7 @@ import colors from '../../style/colors'
 import media from '../../style/media'
 
 // STYLES
-const ContError = styled.div`
+const ContError = styled.section`
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -35,12 +35,15 @@ const LinkError = styled(Link)`
    margin-top: 100px;
    @media ${media.mobile} {
       font-size: 14px;
-}
+   }
+   &:hover {
+      filter: brightness(0.95);
+   }
 `
 
 
 
-// ERROR
+// Page erreur 404
 function Error() {
    return (
       <ContError>

@@ -89,13 +89,13 @@ const TitleLocation = styled.figcaption`
 function Cardlocation() {
    return (
       <ContLocation>
-         {DataLocation.map((collapse) => (
+         {DataLocation.map((location) => (
 
-            <Link to={`/location/${collapse.id}`}>
-               <ContCard key={collapse.id} >
-                  <ImgLocation src={collapse.cover} alt={collapse.title}/>
+            <Link to={`/location/${location.id}`} >
+               <ContCard >
+                  <ImgLocation src={location.cover} alt={location.title}/>
                   <GradientLocation />
-                  <TitleLocation>{collapse.title}</TitleLocation>
+                  <TitleLocation>{location.title}</TitleLocation>
                </ContCard>
             </Link>
 

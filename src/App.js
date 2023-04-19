@@ -31,25 +31,25 @@ const GlobalStyle = createGlobalStyle`
 const Contenair = styled.div`
   max-width: 1300px;
   min-height: 85vh;
-
   width: 80%;  
   margin: 0 auto;
   @media ${media.mobile} {
     width: 90%;
  }
-  `
+`
 
 
-
+// Routes de l'application // Layouts de l'application
 function App() {
 
   return (
     <>
     <GlobalStyle />
+
     <Contenair>
 
       <Header />
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/location/:id" element={<Location />} />

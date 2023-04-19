@@ -1,8 +1,5 @@
 // IMPORTS
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../../style/colors'
-import media from '../../style/media'
 
 // COMPONENTS
 import Collapsehome from '../../components/CollapseHome/Collapsehome'
@@ -11,9 +8,6 @@ import Collapsehome from '../../components/CollapseHome/Collapsehome'
 import Banner from '../../assets/banner-about.png'
 
 // STYLES
-const AboutCont = styled.section`
-
-`
 const BannerCont = styled.img`
    width: 100%;
    height: 223px;
@@ -21,14 +15,14 @@ const BannerCont = styled.img`
    border-radius: 30px;
 `
 
-// ABOUT
+
+// Page About > Contient une bannière et le composant Collapsehome
 function About() {
    return (
-      <AboutCont>
+      <section>
          <BannerCont src={Banner} />
-
          <Collapsehome />
-      </AboutCont>
+      </section>
    )
  }
  

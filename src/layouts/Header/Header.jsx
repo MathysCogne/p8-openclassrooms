@@ -34,6 +34,9 @@ const StyledLink = styled(NavLink)`
    &.active {
       text-decoration: underline;
    }
+   &:hover {
+      filter: brightness(0.9);
+   }
 `
 
 // HEADER
@@ -47,11 +50,11 @@ function Header() {
 
          <div>
             <StyledLink to="/">
-               <a>Accueil</a>
+               Accueil
             </StyledLink>
 
             <StyledLink to="/about">
-               <a>À Propos</a>
+               À Propos
             </StyledLink>
          </div>
       </ContHeader>

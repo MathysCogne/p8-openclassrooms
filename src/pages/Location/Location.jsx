@@ -29,9 +29,6 @@ const ContInfo = styled.section`
 `
 
 
-
-
-
 const ContInfoLogement = styled.div`
    width: 70%;
    display: flex;
@@ -124,30 +121,27 @@ const TEST = styled.div`
 
 
 
-
+// Page Logement > Contient le Composant Slider, compo Rating et le composant Collapsedescription ainsi que les infos du logement et du propriétaire
 function Logement() {
-   const [logement, setLogement] = useState(null);
-   const { id } = useParams();
+   const [logement, setLogement] = useState(null); 
+   const { id } = useParams(); // Récupère l'id du logement dans l'url
 
-   useEffect(() => {
+   useEffect(() => {  // Récupère les infos du logement en fonction de l'id
       const data = DataLocation.find(location => location.id === id);
       if (data) {
       setLogement(data);
-   } else {
+   } else { 
       setLogement(null);
    }
    }, [id]);
 
-   if (!logement) {
+   if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
       return (<Error />);
    }
 
-   return (
+   return ( 
       <>
-         {/* Balise aside gen dans le compo */}
          {logement.pictures && <Slider images={logement.pictures} />}
-
-
 
          <ContInfo>
 
@@ -170,13 +164,8 @@ function Logement() {
                <Rating rating={logement.rating} />
             </ContInfoOwner>
 
-            
-
          </ContInfo>
 
-
-
-         {/* Balise aside gen dans le compo */}
          <Collapsedescription description={logement.description} equipments={logement.equipments}/>
 
       </>

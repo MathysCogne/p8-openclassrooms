@@ -1,7 +1,5 @@
 // IMPORTS
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import colors from '../../style/colors'
 import media from '../../style/media'
 
 // ASSETS
@@ -11,9 +9,6 @@ import Banner from '../../assets/banner-home.png'
 import Cardlocation from '../../components/CardLocation/Cardlocation'
 
 // STYLES
-const HomeCont = styled.section`
-
-`
 const BannerCont = styled.div`
    width: 100%;
    height: 223px;
@@ -47,17 +42,17 @@ const BannerImg = styled.img`
 `
 
 
-// HOME
+// Page d'acceuil > Contient une bannière et le composant Cardlocation
 function Home() {
    return (
-      <HomeCont>
+      <section>
          
          <BannerCont>
             <BannerImg src={Banner} />
          </BannerCont>
          <Cardlocation />
 
-      </HomeCont>
+      </section>
    )
  }
  
