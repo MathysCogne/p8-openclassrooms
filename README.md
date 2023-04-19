@@ -37,6 +37,12 @@ L'objectif était de développer une application web de location immobilière av
 &nbsp;
 ## Installation des dépendances
 
+> Clonner le repo en local
+
+> Ouvrir celui-ci avec son IDE, se placer a la racine du projet
+
+> Ouvrir le terminal
+
 > Installer node_modules: ``npm add``
 
 
