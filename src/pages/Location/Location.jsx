@@ -56,7 +56,7 @@ const TextInfo = styled.p`
 `
 const TagUl = styled.ul`
    padding: 0;
-   margin: 25px 0 0 0;
+   margin: 25px 0 0;
 `
 const TagLi = styled.li`
    font-size: 14px;
@@ -65,7 +65,7 @@ const TagLi = styled.li`
    color: white;
    padding: 7px 20px;
    border-radius: 10px;
-   margin: 0 20px 0 0;
+   margin: 0 20px 10px 0;
    @media ${media.mobile} {
       font-size: 12px;
       padding: 4px 10px;

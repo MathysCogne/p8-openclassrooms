@@ -86,7 +86,7 @@ function Cardlocation() {
       <ContLocation>
          {DataLocation.map((location) => (
 
-            <Link to={`/location/${location.id}`} >
+            <Link to={`/location/${location.id}`} key={location.id} >
                <ContCard >
                   <ImgLocation src={location.cover} alt={location.title}/>
                   <GradientLocation />
