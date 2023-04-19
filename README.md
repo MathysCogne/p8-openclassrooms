@@ -37,7 +37,7 @@ L'objectif était de développer une application web de location immobilière av
 &nbsp;
 ## Installation des dépendances
 
-> Installer les nodes module: ``npm add``
+> Installer node_modules: ``npm add``
 
 
 ## Démarrage
