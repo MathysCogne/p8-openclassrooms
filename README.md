@@ -1,5 +1,5 @@
 &nbsp;
-# Kasa: Chez vous, partout et ailleurs
+# Kasa
 &nbsp;
 
 ![forthebadge](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -16,48 +16,48 @@
 &nbsp;
 ## Description
 
-Projet numéro huit du parcours développeur front-end de chez OpenClassrooms
+Project number eight of the front-end developer path at OpenClassrooms
 
-L'objectif était de développer une application web de location immobilière avec React
-> Pour en savoir plus, retrouvez le brief de mission en bas de page
+The objective was to develop a real estate rental web application with React
+> To find out more, find the brief at the bottom of the page
 
 
-## Compétences évaluées
+## Skills assessed
 
-- Créez une application React complète
+- Create a complete React application
 
-- Configurer la navigation entre les pages de l'application avec React Router
+- Configure app page navigation with React Router
  
-- Initialiser une application avec Create React App
+- Initialize an app with Create React App
  
-- Développer des éléments de l'interface d'un site web grâce à des composants React
+- Develop website interface elements using React components
 
 &nbsp;
 
 &nbsp;
-## Installation des dépendances
+## Install
 
-> Clonner le repo en local
+> Clone the repository locally
 
-> Ouvrir celui-ci avec son IDE, se placer a la racine du projet
+> Go to the root of the project
 
-> Ouvrir le terminal
+> Open Terminal
 
-> Installer node_modules: ``npm add``
+> Install node_modules: ``npm add``
 
 
-## Démarrage
+## To start
 
-> Pour lancer l'application ``npm run start``
-
-&nbsp;
+> To launch the application ``npm run start``
 
 &nbsp;
-## Brief de mission
 
-> Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !
+&nbsp;
+## Brief
 
-> Objectif : Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
+> The Kasa site was coded more than 10 years ago in ASP.NET with significant legacy code. Laura, the CTO, therefore launched a total overhaul to move to a full stack in JavaScript with NodeJS on the back-end side, and React on the front-end side. Kasa also took the opportunity to order new models from its usual designer, who is freelancing. A big project for this year!
+
+> Objective: Start the React project and develop the whole application, the React components, the React Router routes, following the Figma models (responsive!) and all the info I give you below. And this with a quality code!
 
 
 
