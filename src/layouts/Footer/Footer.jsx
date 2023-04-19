@@ -15,7 +15,6 @@ const ContFooter = styled.footer`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
 `
 
 const FooterText = styled.p`
@@ -27,7 +26,7 @@ const FooterText = styled.p`
 `
 
 
-// FOOTER
+// Layout Footer
 function Footer() {
    return (
       <ContFooter>

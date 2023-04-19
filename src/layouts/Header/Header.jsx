@@ -21,8 +21,8 @@ const HomeLogo = styled.img`
       width: 145px;
    }
 `
+               // NavLink = Link + active (Gere directement le style du lien actif)
 const StyledLink = styled(NavLink)`
-           // NavLink = Link + active (Gere directement le style du lien actif)
    color: ${colors.primary};
    text-decoration: none;
    font-size: 24px;
@@ -31,6 +31,7 @@ const StyledLink = styled(NavLink)`
       font-size: 18px;
       padding: 0 0 0 30px;
    }
+   // Gestion du style du lien actif grace a NavLink
    &.active {
       text-decoration: underline;
    }
@@ -39,9 +40,8 @@ const StyledLink = styled(NavLink)`
    }
 `
 
-// HEADER
+// Layout Header 
 function Header() {
-
    return (
       <ContHeader>
          <Link to="/">
