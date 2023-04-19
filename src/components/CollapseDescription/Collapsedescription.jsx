@@ -1,5 +1,5 @@
 // IMPORTS
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 import colors from '../../style/colors'
 import media from '../../style/media'
@@ -62,33 +62,36 @@ const TextCollapse = styled.p`
    }
 `
 
+// Composant Collapse Description > Génere deux collapse (description et équipements) pour la page des logements (Dynamique depuis le JSON)
+// Props : description & equipments 
+function Collapsedescription({ description, equipments }) { 
 
+   const [collapseState, setCollapseState] = useState([false, false]);  // State qui permet de gérer l'ouverture et la fermeture des collapse
    
-// Collapse 
-function Collapsedescription({ description, equipments }) {
-
-   const [collapseState, setCollapseState] = useState([false, false]);
-   
-   const toggleCollapse = (index) => {
-   const newState = [...collapseState];
-   newState[index] = !newState[index];
-   setCollapseState(newState);
+   const toggleCollapse = (index) => { // Fonction qui permet de gérer l'ouverture et la fermeture des collapse Index 0 = Description // Index 1 = Equipements
+   const newState = [...collapseState]; // On copie le state
+   newState[index] = !newState[index]; // On inverse la valeur du state
+   setCollapseState(newState); // On met à jour le state
    };
  
    return (
       <ContCollapse>
          <DivCollapse>
+            {/* // On appelle la fonction toggleCollapse avec l'index 0 pour fermer/ouvrir celle-ci */}
             <TittleCont onClick={() => toggleCollapse(0)}>
                <TittleCollapse>Description</TittleCollapse>
-               {collapseState[0] ? (
+               {collapseState[0] ? ( // Si le state est à true, on affiche la flèche vers le haut, sinon on affiche la flèche vers le bas // 
                   <img src={ArrowUp} alt="arrow" />
                ) : (
                   <img src={ArrowDown} alt="arrow" />
                )}
             </TittleCont>
-            <TextCont isOpen={collapseState[0]}>
+            
+            {/* // On affiche le texte si le state est à true */}
+            <TextCont isOpen={collapseState[0]}> 
                <TextCollapse isOpen={collapseState[0]}>{description}</TextCollapse>
             </TextCont>
+
          </DivCollapse>
    
 
@@ -112,7 +115,6 @@ function Collapsedescription({ description, equipments }) {
       </ContCollapse>
    );
  }
- 
  export default Collapsedescription;
 
  

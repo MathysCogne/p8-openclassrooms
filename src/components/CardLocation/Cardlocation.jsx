@@ -1,6 +1,5 @@
 // IMPORTS
-import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../style/colors'
 import media from '../../style/media'
@@ -29,7 +28,6 @@ const ContLocation = styled.section`
 
 const ContCard = styled.figure`
    cursor: pointer;
-
    width: 340px;
    height: 340px;
    margin: 30px;
@@ -37,7 +35,6 @@ const ContCard = styled.figure`
    &:hover{
       scale: 1.05;
    }
-   
    @media ${media.mobile} {
       width: 85vw;
       height: 250px;
@@ -64,7 +61,6 @@ const GradientLocation = styled.div`
 
    position: relative;
    bottom: 345px;
-
    @media ${media.mobile} {
       bottom: 255px;
    }
@@ -79,13 +75,12 @@ const TitleLocation = styled.figcaption`
    bottom: 395px;
    left: 20px;
    margin: 0;
-
    @media ${media.mobile} {
       bottom: 305px;
    }
 `
 
-
+// Composant CardLocation > Génère des cards avec les images des locations, dynamiquement depuis le fichier JSON
 function Cardlocation() {
    return (
       <ContLocation>
@@ -102,8 +97,5 @@ function Cardlocation() {
          ))}
       </ContLocation>
    )
- }
-
- 
-
+}
 export default Cardlocation

@@ -31,7 +31,7 @@ function Footer() {
    return (
       <ContFooter>
          <Link to="/">
-            <img src={LogoFooter} />
+            <img src={LogoFooter} alt='Logo de Kasa'/>
          </Link>
 
          <FooterText>© 2023 Kasa. All rights reserved</FooterText>

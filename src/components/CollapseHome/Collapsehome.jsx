@@ -47,47 +47,41 @@ const TextCollapse = styled.p`
    }
 `
 
-
-
-
-
-   
-// Collapse 
+// Composant Collapse Home > Génere les collapses de la page a propos depuis le fichier json
 function Collapsehome() {
 
-   // State
-   const [collapseState, setCollapseState] = useState([]);
+   const [collapseState, setCollapseState] = useState([]); // State des collapses
 
-   // UseEffect - On charge le state avec les données
-   useEffect(() => {
-      setCollapseState(DataCollapse.map(collapse => collapse.state));
+   useEffect(() => { 
+      setCollapseState(DataCollapse.map(collapse => collapse.state)); // Initialisation de l'état des collapses
    }, []);
 
-   // Toggle Collapse
-   // 
-   const toggleCollapse = (index) => {
-      const newState = [...collapseState];
-      newState[index] = !newState[index];
-      setCollapseState(newState);
+   const toggleCollapse = (index) => { // Fonction qui gère l'ouverture et la fermeture des collapses
+      const newState = [...collapseState]; // Copie du state des collapses
+      newState[index] = !newState[index]; // Inverse l'état du collapse cliqué
+      setCollapseState(newState); // Met à jour le state des collapses
    }
 
    return (
       <>
-         {DataCollapse.map((collapse, index) => (
-            <div key={collapse.id} >
+         {DataCollapse.map((collapse, index) => ( // Boucle sur le fichier json
+            // Génère un collapse par élément du fichier json
+            <div key={collapse.id} > 
                <ContCollapse>
-                  <TittleCont onClick={() => toggleCollapse(index)}>
+                  {/* // Gère l'ouverture et la fermeture des collapses au click */}
+                  <TittleCont onClick={() => toggleCollapse(index)}> 
                      <TittleCollapse>{collapse.title}</TittleCollapse>
 
-                     {collapseState[index] ? <img src={ArrowUp} alt="arrow" /> : <img src={ArrowDown} alt="arrow" />}
+                     {/* // Gère l'affichage de la flèche en fonction de l'état du collapse */}
+                     {collapseState[index] ? <img src={ArrowUp} alt="arrow" /> : <img src={ArrowDown} alt="arrow" />} 
 
                   </TittleCont>
+                  {/* // Gère l'affichage du texte en fonction de l'état du collapse */}
                   {collapseState[index] && <TextCollapse>{collapse.text}</TextCollapse>}
                </ContCollapse>
             </div>
          ))}
       </>
    )
- }
- 
+}
  export default Collapsehome
