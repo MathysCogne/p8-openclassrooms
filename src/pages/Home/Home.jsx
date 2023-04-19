@@ -7,6 +7,9 @@ import media from '../../style/media'
 // ASSETS
 import Banner from '../../assets/banner-home.png'
 
+// COMPONENTS
+import Cardlocation from '../../components/CardLocation/Cardlocation'
+
 // STYLES
 const HomeCont = styled.section`
 
@@ -18,6 +21,9 @@ const BannerCont = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+   @media ${media.mobile} {
+      height: 150px;
+   }
    &::after {
       content: "Chez vous, partout et ailleurs...";
       z-index: 1;
@@ -34,7 +40,10 @@ const BannerImg = styled.img`
    height: 223px;
    object-fit: cover;
    border-radius: 30px;
-   filter: brightness(0.85);
+   filter: brightness(0.65);
+   @media ${media.mobile} {
+      height: 150px;
+   }
 `
 
 
@@ -46,8 +55,8 @@ function Home() {
          <BannerCont>
             <BannerImg src={Banner} />
          </BannerCont>
+         <Cardlocation />
 
-         <h1>LANDING PAGE 🙈🙈 HIHI</h1>
       </HomeCont>
    )
  }

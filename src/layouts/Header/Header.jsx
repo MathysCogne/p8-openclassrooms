@@ -15,15 +15,14 @@ const ContHeader = styled.nav`
    margin: 50px 0;
 `
 const HomeLogo = styled.img`
-   height: 68px;
-   width: 210px;
+   width: 180px;
    @media ${media.mobile} {
       height: 47px;
       width: 145px;
    }
 `
 const StyledLink = styled(NavLink)`
-                           // NavLink = Link + active (Gere directement le style du lien actif)
+           // NavLink = Link + active (Gere directement le style du lien actif)
    color: ${colors.primary};
    text-decoration: none;
    font-size: 24px;
@@ -36,7 +35,6 @@ const StyledLink = styled(NavLink)`
       text-decoration: underline;
    }
 `
- 
 
 // HEADER
 function Header() {

@@ -23,10 +23,14 @@ const GlobalStyle = createGlobalStyle`
     div {
         font-family: 'Monteserat', sans-serif;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 `
 const Contenair = styled.div`
   max-width: 1300px;
-  min-height: 80vh;
+  min-height: 85vh;
 
   width: 80%;  
   margin: 0 auto;
