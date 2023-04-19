@@ -22,7 +22,7 @@ The objective was to develop a real estate rental web application with React
 > To find out more, find the brief at the bottom of the page
 
 
-## Skills assessed
+## Skills
 
 - Create a complete React application
 
