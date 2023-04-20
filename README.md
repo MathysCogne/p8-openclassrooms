@@ -43,7 +43,7 @@ L'objectif était de développer une application web de location immobilière av
 
 > Ouvrir le terminal
 
-> Installer node_modules: ``npm add``
+> Installer Node et ses dépendances: ``npm add``
 
 
 ## Démarrage
