@@ -52,7 +52,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/p8-openclassrooms/" element={<Home />} />
+        {/* <Route path="/p8-openclassrooms/" element={<Home />} /> */}
         <Route path="/location/:id" element={<Location />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
