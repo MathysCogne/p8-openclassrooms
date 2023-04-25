@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+&nbsp;
+# KASA: Chez vous, partout et ailleurs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Available Scripts
 
-In the project directory, you can run:
+![](https://forthebadge.com/images/badges/built-with-love.svg)
 
-### `npm start`
+https://mathyscogne.github.io/p8-openclassrooms/
+&nbsp;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+&nbsp;
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Projet huit du parcours développeur front-end de chez OpenClassrooms
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+L'objectif était de développer une application web de location immobilière avec React
+> Pour en savoir plus, retrouvez le brief de mission en bas de page
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Compétences évaluées
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Créez une application React complète
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Configurer la navigation entre les pages de l'application avec React Router
+ 
+- Initialiser une application avec Create React App
+ 
+- Développer des éléments de l'interface d'un site web grâce à des composants React
 
-### `npm run eject`
+&nbsp;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+&nbsp;
+## Installation des dépendances
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Cloner le repo en local
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Ouvrir celui-ci avec son IDE, se placer à la racine du projet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Ouvrir le terminal
 
-## Learn More
+> Installer Node et ses dépendances: ``npm add``
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Démarrage
 
-### Code Splitting
+> Pour lancer l'application ``npm run start``
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+&nbsp;
 
-### Analyzing the Bundle Size
+&nbsp;
+## Brief de mission
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !
 
-### Making a Progressive Web App
+> Objectif : Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+&nbsp;
