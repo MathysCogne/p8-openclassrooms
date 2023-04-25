@@ -1,0 +1,38 @@
+.ContError {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 57vh;
+   color: #FF6060;
+}
+
+.TitleError {
+   font-size: 288px;
+   font-weight: 900;
+   margin: 0;
+   @media (max-width: 1001px) {
+      font-size: 96px;
+   }
+}
+
+.TextError {
+   font-size: 36px;
+   margin: 0;
+   @media (max-width: 1001px) {
+      font-size: 22px;
+   }
+}
+
+.LinkError {
+   color: #FF6060;
+   font-size: 18px;
+   margin-top: 100px;
+   @media (max-width: 1001px) {
+      font-size: 14px;
+   }
+}
+.LinkError:hover {
+   filter: brightness(0.95);
+}

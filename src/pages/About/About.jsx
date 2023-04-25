@@ -1,27 +1,20 @@
 // IMPORTS
-import styled from 'styled-components'
+import './about.css'
 
 // COMPONENTS
-import Collapsehome from '../../components/CollapseHome/Collapsehome'
+import Collapse from '../../components/Collapse/Collapse'
 
 // ASSETS
 import Banner from '../../assets/banner-about.png'
-
-// STYLES
-const BannerCont = styled.img`
-   width: 100%;
-   height: 223px;
-   object-fit: cover;
-   border-radius: 30px;
-`
+import data from '../../assets/collapse.json'
 
 
 // Page About > Contient une bannière et le composant Collapsehome
 function About() {
    return (
       <section>
-         <BannerCont src={Banner} />
-         <Collapsehome />
+         <img className='BannerCont' alt='Paysage' src={Banner} />
+         <Collapse data={data}/>
       </section>
    )
  }

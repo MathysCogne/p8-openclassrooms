@@ -1,0 +1,111 @@
+.ContInfo{
+   color: #FF6060;
+   margin: 60px 0 30px 0;
+
+   display: flex;
+   justify-content: space-between;
+
+   @media (max-width: 1001px) {
+      flex-direction: column;
+      margin: 30px 0;
+   }
+}
+
+
+
+.ContInfoLogement{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   @media (max-width: 1001px) {
+      width: 100%;
+   }
+}
+
+.TittleInfo{
+   font-size: 36px;
+   font-weight: 500;
+   margin: 0;
+   @media (max-width: 1001px) {
+      font-size: 25px;
+   }
+}
+
+.TextInfo{
+   margin: 0;
+   font-size: 18px;
+   
+   @media (max-width: 1001px) {
+      font-size: 13px;
+   }
+}
+
+.TagUl{
+   padding: 0;
+   margin: 25px 0 0;
+}
+
+.TagLi{
+   font-size: 14px;
+   display: inline-block;
+   background-color: #FF6060;
+   color: white;
+   padding: 7px 20px;
+   border-radius: 10px;
+   margin: 0 20px 10px 0;
+   @media (max-width: 1001px) {
+      font-size: 12px;
+      padding: 4px 10px;
+      margin: 0 15px 10px 0;
+   }
+}
+
+
+
+
+.ContInfoOwner{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   @media (max-width: 1001px) {
+      margin: 20px 0 0 0;
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.ImgOwner{
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   margin: 0 0 0 30px;
+   @media (max-width: 1001px) {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+   }
+}
+
+.TextInfoOwner{
+   margin: 0;
+   width: 60px;
+   font-size: 18px;
+   
+   @media (max-width: 1001px) {
+      width: 40px;
+      font-size: 13px;
+}
+}
+
+.TEST{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   @media (max-width: 1001px) {
+      margin-bottom: 0;
+   }
+}

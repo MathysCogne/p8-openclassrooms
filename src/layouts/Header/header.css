@@ -1,0 +1,30 @@
+.StyledLink {
+   color: #FF6060;
+   text-decoration: none;
+   font-size: 24px;
+   padding: 0 0 0 60px;
+   @media (max-width: 1001px) {
+      font-size: 17px;
+      padding: 0 0 0 15px;
+   }
+}
+.StyledLink.active:hover {
+   filter: brightness(0.9);
+}
+.StyledLink.active {
+   text-decoration: underline;
+}
+
+
+.ContHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 50px 0;
+}
+.HomeLogo {
+   width: 180px;
+   @media (max-width: 1001px) {
+      width: 115px;
+   }
+}
