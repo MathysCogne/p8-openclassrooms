@@ -52,6 +52,7 @@ function Home() {
          <BannerCont>
             <BannerImg src={Banner} />
          </BannerCont>
+         
          <Cardlocation />
 
       </section>
